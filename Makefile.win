@@ -1,0 +1,28 @@
+# Project: Chess-Game-SDL3-C
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Chess-Game-SDL3.o
+LINKOBJ  = Chess-Game-SDL3.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -L"C:/SDL3-d/SDL3-3.2.22/x86_64-w64-mingw32/lib" -L"C:/SDL3_image-devel-3.2.4-mingw/SDL3_image-3.2.4/x86_64-w64-mingw32/lib" -L"C:/SDL3_ttf-3.2.2/x86_64-w64-mingw32/lib" -L"C:/Libraries/curl-8.21.0_2-win64-mingw/lib" -static-libgcc -lSDL3 -lSDL3_image
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/SDL3-d/SDL3-3.2.22/x86_64-w64-mingw32/include" -I"C:/SDL3_image-devel-3.2.4-mingw/SDL3_image-3.2.4/x86_64-w64-mingw32/include" -I"C:/SDL3_ttf-3.2.2/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/SDL3-d/SDL3-3.2.22/x86_64-w64-mingw32/include" -I"C:/SDL3_image-devel-3.2.4-mingw/SDL3_image-3.2.4/x86_64-w64-mingw32/include" -I"C:/SDL3_ttf-3.2.2/x86_64-w64-mingw32/include" -I"C:/Libraries/curl-8.21.0_2-win64-mingw/include"
+BIN      = Chess-Game-SDL3-C.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Chess-Game-SDL3.o: Chess-Game-SDL3.c
+	$(CC) -c Chess-Game-SDL3.c -o Chess-Game-SDL3.o $(CFLAGS)
