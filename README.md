@@ -28,8 +28,8 @@ The project focuses on combining programming logic with graphical rendering whil
 ## 🛠️ Built With
 
 - **Language:** C
-- **Graphics Library:** SDL3
-- **Image Library:** SDL3_image
+- **Graphics Library:** SDL3-3.2.22
+- **Image Library:** SDL3_image-devel-3.2.4-mingw
 - **IDE:** Red Dev-C++
 
 ---
