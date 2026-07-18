@@ -66,7 +66,7 @@ Chess-Game-SDL3/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/syed-abdullah-shah1/Chess-Game-SDL3-C.git
+https://github.com/syed-abdullah-shah1/Chess-Game-SDL3-C.git
 ```
 
 2. Open the project in Red Dev-C++.
